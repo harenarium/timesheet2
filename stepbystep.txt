@@ -1,0 +1,7 @@
+create empty directories
+create index.ejs and partials
+git init add commit remote and push
+bootstrapn
+set up basic app.js and server
+npm init etc, body-parser, ejs, express, sqlite3
+set up first controller, route, controller
