@@ -8,3 +8,8 @@ set up first controller, route, load controller
 test node app. check spelling and directory location etc
 git add, commit, push
 add table
+add db.js in config
+look at bootstrap for tables
+change tables to grid
+add link to new page
+new view, controller, route controller

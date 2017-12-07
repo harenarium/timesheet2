@@ -1,0 +1,29 @@
+
+<%include ../partials/header%>
+	<main>
+		<div class="form group">
+		    <form method = "POST" action="/">
+		    	<p>Name<br><input type="text" name="newEmployeeName" placeholder="Name"></p>
+
+		    	<p>
+				  <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+				    More
+				  </button>
+				</p>
+				<div class="collapse" id="collapseExample">
+				  <div class="card card-body">
+					<p>Phone<br><input type="text" name="newEmployeePhone" placeholder="Phone"></p>
+					<p>Address<br><input type="text" name="newEmployeeAddress" placeholder="Address"></p>
+			        <p>Notes<br><textarea name="newEmployeeNotes" rows="3" placeholder="Notes">
+			        </textarea></p>
+				  </div>
+				</div>
+		        <button type="submit" class="btn btn-primary">Submit</button>
+
+		    </form>
+	    </div>
+
+	</main>
+<% include ../partials/footer%>
+
+
