@@ -4,4 +4,7 @@ git init add commit remote and push
 bootstrapn
 set up basic app.js and server
 npm init etc, body-parser, ejs, express, sqlite3
-set up first controller, route, controller
+set up first controller, route, load controller
+test node app. check spelling and directory location etc
+git add, commit, push
+add table

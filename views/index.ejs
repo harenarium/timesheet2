@@ -1,11 +1,67 @@
 
-<!doctype html>
-<html>
-  <head>
-    <title>FC timesheet</title>
-  </head>
-  <body>
-    <h1> Hello, World!</h1>
-    <h2> <%=welcomePhrase%></h2>
-  </body>
-</html>
+<%include partials/header%>
+	<main>
+    	<h2> <%=welcomePhrase%></h2>
+    	<table class="table">
+    		<tr>
+		        <td></td>
+		        <td></td>
+		        <td></td>
+		        <td></td>
+		        <td></td>
+		        <td></td>
+		        <td></td>
+		        <td></td>
+		        <td></td>
+		        <td></td>
+		    </tr>
+		    <tr>
+		        <td><a href="#" class="btn"><-</a></td>
+		        <th></th>
+		        <th><a href="#" class="btn">Saturday</a></th>
+		        <th><a href="#" class="btn">Sunday</a></th>
+				<th><a href="#" class="btn">Monday</a></th>
+				<th><a href="#" class="btn">Tuesday</a></th>
+		        <th><a href="#" class="btn">Wednesday</a></th>
+		        <th><a href="#" class="btn">Thursday</a></th>
+		        <th><a href="#" class="btn">Friday</a></th>
+		        <td><a href="#" class="btn">-></a></td>
+		    </tr>
+		    <%//for each employee%>
+		    <tr>
+		        <td></td>		    	
+		        <th scope="row">Jenny</th>
+		        <td>10-8</td>
+		        <td></td>
+		        <td></td>
+		        <td>10-8</td>
+		        <td>10-8</td>
+		        <td>10-8</td>
+		        <td>10-8</td>
+		        <td></td>	
+		    </tr>
+		    <tr>
+		    	<td></td>	
+		        <th scope="row">Zung Ah</th>
+		        <td>10-8</td>
+		        <td>10-8</td>
+		        <td>10-8</td>
+		        <td>10-8</td>
+		        <td>10-8</td>
+		        <td></td>	
+		        <td></td>	
+		        <td></td>	
+		    </tr>
+		    <%//}%>
+		</table>
+	</main>
+
+<p><a href="#" class="btn">Add Employee</a></p>
+<p><a href="#" class="btn">Edit Employees</a></p>
+<p><a href="#" class="btn">Search the archive</a></p>
+<p><a href="#" class="btn">Print to Excel</a></p>
+
+
+<% include partials/footer%>
+
+
