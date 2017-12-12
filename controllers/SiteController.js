@@ -1,9 +1,12 @@
 const SiteController = {};
-//const Question = require("../models/questions.js")
+const Employee = require("../models/Employee.js")
+const Week = require("../models/Week.js")
 
 SiteController.Index = async function(req, resp){
-  //const questions = await Question.All()
-  resp.render('index.ejs', {welcomePhrase: "Welcome to the Home Page"})
+  const employees = await Employee.All()
+  const week = await Week.FindThisWeek()
+
+  resp.render('index.ejs', {employees, week})
 }
 
 

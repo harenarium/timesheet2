@@ -11,5 +11,9 @@ add table
 add db.js in config
 look at bootstrap for tables
 change tables to grid
-add link to new page
+add link to new page for add employee
 new view, controller, route controller
+add link to new page for edit employee
+new view, controller, route controller
+add employee phone to employee class. make optional, drop old table
+create week.js

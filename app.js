@@ -17,11 +17,12 @@ app.use(bodyParser.urlencoded({extended:false}));
 
 //Load Models below 
 const Employee = require("./models/Employee.js")
+const Week = require("./models/Week.js")
 
 //Run Migration
 async function migrate(){
 	await Employee.CreateTable();
-	// await Icebreaker.CreateTable();
+	await Week.CreateTable();
 	// await IcebreakerResponse.CreateTable();
 }
 migrate();
@@ -35,6 +36,10 @@ const EmployeeController = require("./controllers/EmployeeController.js")
 app.get("/", SiteController.Index)
 app.get("/employees/new", EmployeeController.New)
 app.post("/", EmployeeController.Create)
+app.get("/employees/edit", EmployeeController.ShowAll)
+app.post("/employees/edit", EmployeeController.Delete)
+app.get("/employees/editEmployee", EmployeeController.ShowOne)
+
 
 app.listen(3000, function (){
 	console.log("server started on port 3000...");

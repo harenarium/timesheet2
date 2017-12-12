@@ -1,0 +1,25 @@
+
+<%include ../partials/header%>
+	<main>
+    	<div class="container">
+		  
+		  <%employees.forEach(function(employee){%>
+		  <div class="row">
+		    <div class="col-sm"></div>
+		    <div class="col-sm"><a href="/employees/editEmployee?employeeID=<%=employee.id%>"><%=employee.name%></a></div>
+		    <div class="col-sm"><a href="#">delete</a></div>
+
+		  </div>
+		  <%})%>
+		</div>
+
+		<p><a href="/employees/new" class="btn">Add Employee</a></p>
+		<p><a href="#" class="btn">Search the archive</a></p>
+		<p><a href="#" class="btn">Print to Excel</a></p>
+
+	</main>
+
+
+<% include ../partials/footer%>
+
+
