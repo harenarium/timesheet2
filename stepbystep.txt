@@ -17,3 +17,6 @@ add link to new page for edit employee
 new view, controller, route controller
 add employee phone to employee class. make optional, drop old table
 create week.js
+----
+revisit after fis
+add EmployeeWeek.js
